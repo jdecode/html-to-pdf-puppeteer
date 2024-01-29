@@ -20,7 +20,7 @@
 ```
 
 Puppeteer PDF Options
-https://github.com/GoogleChrome/puppeteer/blob/v1.14.0/docs/api.md#pagepdfoptions
+https://github.com/puppeteer/puppeteer/blob/puppeteer-v21.5.1/docs/api/puppeteer.pdfoptions.md
 
 ## Deploy
 
