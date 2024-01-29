@@ -31,7 +31,8 @@ functions.http("htmltopdf", async (req, res) => {
   try {
     await page.setContent(body.html, {
       waitUntil: "networkidle0",
-    });
+    })
+    .emulateMedia('screen');
   } catch (err) {
     throw err;
   }
