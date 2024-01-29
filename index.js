@@ -38,8 +38,8 @@ functions.http("htmltopdf", async (req, res) => {
 
     let pdf;
   try {
-    await page.emulateMedia('screen');
-    res.send(await page.pdf(body.opts, { timeout: 60000 }));
+    await page.emulateMediaType('screen');
+    pdf = await page.pdf(body.opts, { timeout: 60000 });
   } catch (err) {
     throw err;
   }
